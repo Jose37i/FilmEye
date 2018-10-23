@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResults"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/Results_MovieName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Movie_Name"
+        app:layout_constraintBottom_toTopOf="@+id/Results_ReleaseDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Results_RunTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/run_time"
+        app:layout_constraintBottom_toBottomOf="@+id/Results_Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Results_Genre"
+        app:layout_constraintTop_toBottomOf="@+id/Results_ReleaseDate" />
+
+    <TextView
+        android:id="@+id/Results_Genre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/genre"
+        app:layout_constraintBottom_toTopOf="@+id/Results_Producers"
+        app:layout_constraintEnd_toStartOf="@+id/Results_RunTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_ReleaseDate" />
+
+    <TextView
+        android:id="@+id/Results_ReleaseDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="29dp"
+        android:text="@string/release_date"
+        app:layout_constraintBottom_toTopOf="@+id/Results_Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Results_RunTime"
+        app:layout_constraintTop_toBottomOf="@+id/Results_MovieName" />
+
+    <TextView
+        android:id="@+id/Reusults_Synopsis"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/synopsis"
+        app:layout_constraintBottom_toTopOf="@+id/Results_Budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Producers" />
+
+    <TextView
+        android:id="@+id/Results_Reviews"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/reviews"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Website" />
+
+    <TextView
+        android:id="@+id/Results_Budget"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:text="@string/budget"
+        app:layout_constraintBottom_toTopOf="@+id/Results_Website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reusults_Synopsis" />
+
+    <TextView
+        android:id="@+id/Results_Website"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/website"
+        app:layout_constraintBottom_toTopOf="@+id/Results_Reviews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Budget" />
+
+    <TextView
+        android:id="@+id/Results_Producers"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:text="@string/producers"
+        app:layout_constraintBottom_toTopOf="@+id/Reusults_Synopsis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Genre" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Reviews" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="@string/Button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/Results_Reviews" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Film Eye</string>
+    <string name="Movie_Name">Movie Name:</string>
+    <string name="rating">Rating:</string>
+    <string name="run_time">Runtime:</string>
+    <string name="genre">Genre:</string>
+    <string name="release_date">Release Date:</string>
+    <string name="synopsis">Synopsis:</string>
+    <string name="director">Director:</string>
+    <string name="stars">Starring:</string>
+    <string name="reviews">Reviews:</string>
+    <string name="budget">Budget:</string>
+    <string name="website">Website:</string>
+    <string name="producers">Produced by:</string>
+    <string name="submit">Submit</string>
+    <string name="editText">Type what you want to search for</string>
+    <string name="movieSearch">Search for Movie</string>
+    <string name="personSearch">Search for a Person</string>
+    <string name="genreSearch">Search by genre</string>
+    <string name="editTextHint">Title of a movie, actor, or genre to search for"</string>
+    <string name="nowPlaying">Now Playing:"</string>
+    <string name="upcoming">Upcoming Movies:</string>
+    <string name="Button">Get Reviews</string>
+    <string name="Button1">Back to Home Screen</string>
+    <string name="Button2">Back to Home Screen</string>
+
+
+</resources>
